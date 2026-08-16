@@ -1,0 +1,7 @@
+queue_rules:
+  - name: default
+    batch_size: 1
+    queue_conditions: []
+    merge_conditions:
+      - check-success = BB_TRANSFER_INFLIGHT_GATE_Q7N4
+    merge_method: merge
